@@ -33,7 +33,7 @@
 
 | EDA датасета | Примеры аннотаций |
 |---|---|
-| ![eda](artifacts/plots/eda_hrplanes.png) | ![samples](artifacts/plots/samples_train.png) |
+| ![eda](artifacts/plots/eda_hrplanes.png) | ![samples](artifacts/plots/samples_train(1).png) |
 
 ---
 
