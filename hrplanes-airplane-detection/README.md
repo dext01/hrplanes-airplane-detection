@@ -244,7 +244,7 @@ ls artifacts/plots/
 | `samples_test.png` | Примеры изображений из test |
 
 **Веса модели** (~270 MB) хранятся на Google Drive:
-👉 [Скачать best.pt и last.pt](https://drive.google.com/drive/folders/ВАША_ССЫЛКА)
+👉 [Скачать best.pt и last.pt](https://drive.google.com/drive/folders/1ZWnw3uZQfVsnHejFBGkk-0IDrOStsVBm?usp=sharing)
 
 После скачивания поместите файлы в `artifacts/weights/`.
 
