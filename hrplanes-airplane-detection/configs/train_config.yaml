@@ -1,0 +1,43 @@
+# Конфигурация обучения YOLOv8x на датасете HRPlanes
+# Эксперимент 12 из статьи: лучший F1 (0.9932)
+# Ilmak et al., Engineering Applications of Artificial Intelligence, 2025
+
+experiment:
+  name: "exp_v8x_960_sgd_aug"
+  seed: 42
+
+model:
+  architecture: "yolov8x"
+  pretrained: true
+
+data:
+  zenodo_id: 14546832
+  yaml_path: "data/hrplanes.yaml"
+  train_split: 0.70
+  val_split: 0.20
+  test_split: 0.10
+
+training:
+  epochs: 100
+  imgsz: 960           # 960x960 — лучший результат по статье
+  batch: 16            # при OOM автоматически снижается до 8
+  lr0: 0.001
+  optimizer: "SGD"
+  momentum: 0.937
+  weight_decay: 0.0005
+  workers: 2
+  device: 0            # 0 = первая GPU; "cpu" для CPU
+  save_period: 10      # сохранять чекпоинт каждые N эпох
+
+augmentation:
+  hsv_h: 0.015         # случайный сдвиг оттенка
+  hsv_s: 0.7           # случайное изменение насыщенности
+  hsv_v: 0.4           # случайное изменение яркости
+  mosaic: 1.0          # mosaic аугментация (4 изображения в 1)
+  flipud: 0.5          # вертикальный flip с вероятностью 0.5
+  fliplr: 0.5          # горизонтальный flip с вероятностью 0.5
+
+paths:
+  data_dir: "data/HRPlanes"
+  results_dir: "runs"
+  artifacts_dir: "artifacts"

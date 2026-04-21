@@ -1,0 +1,5 @@
+# Эта папка содержит графики обучения и метрик.
+# PNG файлы генерируются автоматически скриптами:
+#   python scripts/prepare_dataset.py  -> eda_hrplanes.png, samples_*.png
+#   python scripts/train.py            -> training_curves.png
+#   python scripts/val.py              -> metrics_val_test.png, comparison_vs_paper.png
