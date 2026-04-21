@@ -305,23 +305,6 @@ Precision также выше (+0.0017). F1 и mAP50-95 незначительн
 **Датасет HRPlanes:**
 https://zenodo.org/records/14546832
 
-**Статья:**
-
-```bibtex
-@article{ILMAK2025111854,
-  title   = {Exploring You Only Look Once v8 and v9 for efficient airplane
-             detection in very high resolution remote sensing imagery},
-  journal = {Engineering Applications of Artificial Intelligence},
-  volume  = {160},
-  pages   = {111854},
-  year    = {2025},
-  doi     = {10.1016/j.engappai.2025.111854},
-  author  = {Doğu İlmak and Tolga Bakirman and Elif Sertel},
-}
-```
-
----
-
 ## 📋 Системные требования
 
 - Python 3.10+
